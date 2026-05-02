@@ -19,10 +19,10 @@
     padding-bottom: 80px;
   }
   .hero-logo {
-    width: 140px;
-    height: 140px;
+    width: 220px;
+    height: 220px;
     object-fit: contain;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     opacity: 0;
     transform: translateY(16px);
     animation: fadeUp 0.8s ease 0.1s forwards;
@@ -179,6 +179,19 @@
   /* About section */
   .about-section { padding: 100px 0 60px; }
 
+  .profile-portrait {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 36px;
+    border: 1px solid var(--cream-dark);
+    filter: grayscale(100%);
+    transition: filter 0.6s ease;
+  }
+  .profile-portrait:hover { filter: grayscale(0%); }
+
   @media (max-width: 900px) {
     .hero-cards { grid-template-columns: 1fr; padding: 0 24px; }
     .hero-rule { padding: 0 24px; }
@@ -243,8 +256,9 @@
     </div>
     <div class="about-grid reveal">
       <div>
+        <img class="profile-portrait" src="images/jared-profile.png" alt="Jared Vincent Rosen">
         <span class="about-label">Background</span>
-        <p class="about-text">Technical writer and content strategist based in Portland, Oregon. Currently completing a B.S. in Technical Communication at Arizona State University, with a career transition toward product management at design-led technology companies underway in parallel with the degree.</p>
+        <p class="about-text">Technical writer and content strategist based in Portland, Oregon. B.S. in Technical Communication (UX) from Arizona State University. Actively transitioning toward product management at design-led technology companies.</p>
         <p class="about-text">The through-line across everything here, the documentation work, the research projects, the content strategy, is a consistent interest in how information is structured, who it's for, and what it's trying to do. That interest is what's pulling toward PM.</p>
 
         <span class="about-label">Professional</span>
@@ -265,10 +279,6 @@
         <span class="about-label">Contact</span>
         <div style="margin-top:4px;">
           <div class="contact-item">
-            <span class="contact-label">Site</span>
-            <a href="https://jvrosen.com">jvrosen.com</a>
-          </div>
-          <div class="contact-item">
             <span class="contact-label">Blog</span>
             <a href="https://medium.com/@jared.v.rosen" target="_blank" rel="noopener">medium.com/@jared.v.rosen</a>
           </div>
@@ -282,7 +292,7 @@
           </div>
           <div class="contact-item">
             <span class="contact-label">Degree</span>
-            B.S. Technical Communication, ASU · 2026
+            B.S. Technical Communication (UX), ASU · 2026
           </div>
           <div class="contact-item">
             <span class="contact-label">Currently</span>
