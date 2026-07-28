@@ -40,28 +40,49 @@
     animation: fadeUp 0.8s ease 0.25s forwards;
   }
   .hero-tagline {
-    font-family: 'DM Mono', monospace;
-    font-size: clamp(11px, 1.4vw, 13px);
-    font-weight: 400;
-    letter-spacing: 0.12em;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
     color: var(--near-black);
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     opacity: 0;
     transform: translateY(16px);
     animation: fadeUp 0.8s ease 0.4s forwards;
   }
   .hero-sub {
     font-family: 'DM Mono', monospace;
+    font-size: clamp(10px, 1.2vw, 12px);
+    font-weight: 400;
+    color: var(--near-black);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.8s ease 0.52s forwards;
+  }
+  .hero-pillars {
+    font-family: 'DM Mono', monospace;
     font-size: 10px;
     font-weight: 300;
     color: var(--muted);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     opacity: 0;
     transform: translateY(16px);
-    animation: fadeUp 0.8s ease 0.52s forwards;
+    animation: fadeUp 0.8s ease 0.58s forwards;
+  }
+  .about-philosophy {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(28px, 4vw, 46px);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    color: var(--near-black);
+    margin: 0 0 24px;
   }
   .hero-rule {
     width: 100%;
@@ -213,8 +234,9 @@
 <section class="hero">
   <img class="hero-logo" src="images/jvr-logo.png" alt="JVR logo">
   <h1 class="hero-name">Jared Vincent Rosen</h1>
-  <p class="hero-tagline">I write. &nbsp;&nbsp; I think in systems. &nbsp;&nbsp; I want to build products.</p>
-  <p class="hero-sub">Targeting product management at design-led technology companies</p>
+  <p class="hero-tagline">I design product experiences through information.</p>
+  <p class="hero-sub">Organizing information. Solving product problems. Improving experiences.</p>
+  <p class="hero-pillars">Documentation | Developer Experience | Information Architecture</p>
 
   <div class="hero-rule">
     <span class="hero-rule-line"></span>
@@ -252,29 +274,25 @@
   <div class="section">
     <div class="section-header reveal">
       <h2 class="section-title">About</h2>
-      <span class="section-meta">Portland, OR </span>
+      <span class="section-meta">Vancouver, WA</span>
     </div>
     <div class="about-grid reveal">
       <div>
         <img class="profile-portrait" src="images/jared-profile.png" alt="Jared Vincent Rosen">
+
+        <h3 class="about-philosophy">Documentation is the product.</h3>
+        <p class="about-text">Whether the audience is customers, developers, internal teams, or AI systems, documentation is the product people experience when they are learning, integrating, troubleshooting, or making decisions.</p>
+        <p class="about-text">Throughout my career, I have applied product thinking to documentation by treating it as a living product with users, success metrics, technical debt, feature requests, and a roadmap for continuous improvement. Every decision, from information architecture and search to developer documentation, AI knowledge systems, and customer education, is an opportunity to reduce friction, improve adoption, and help people accomplish their goals.</p>
+
         <span class="about-label">Background</span>
-        <p class="about-text">Technical writer and content strategist based in Portland, Oregon. B.S. in Technical Communication (UX) from Arizona State University. Actively transitioning toward product management at design-led technology companies.</p>
-        <p class="about-text">The through-line across everything here, the documentation work, the research projects, the content strategy, is a consistent interest in how information is structured, who it's for, and what it's trying to do. That interest is what's pulling toward PM.</p>
-
-        <span class="about-label">Professional</span>
-        <p class="about-text">At Ledger, the work spans technical documentation, knowledge base architecture, AI support content strategy, security content, and cross-functional coordination with product and support ops teams. At Simple Finance before that, one of the first all-app, no-branch banks in the US, I led content strategy, help center documentation, product writing, and persona development built from real user research.</p>
-        <p class="about-text">Both roles involved working directly with product teams to make decisions about what gets built, what gets written, and how users experience information at the moments that matter most. That work isn't separate from product. It is product.</p>
-
-        <span class="about-label">Academic</span>
-        <p class="about-text">The ASU coursework included here was selected specifically because it demonstrates PM-adjacent skills: usability research, audience analysis, proposal writing for real clients, and structured persona development grounded in actual participant data.</p>
+        <p class="about-text">I am a technical writer, content strategist, and systems thinker with a B.S. in Technical Communication from Arizona State University, with a focus on user experience.</p>
+        <p class="about-text">For most of my career, I have helped people understand complex technology. Over time, I realized the work I enjoyed most was not simply writing documentation. It was understanding users, organizing information, identifying friction, and improving the experience around a product.</p>
       </div>
       <div>
-        <span class="about-label">Audience</span>
-        <p class="about-text">Product teams and hiring managers at design-led technology companies. The case study format and overall direction are shaped by this audience. The goal is to show PM-adjacent thinking, not just writing samples.</p>
-        <p class="about-text">If you're a recruiter or hiring manager, the Work section is the right starting point. If you're a fellow practitioner who found this somehow, the Study section has the methodology.</p>
-
-        <span class="about-label">Currently</span>
-        <p class="about-text">Building toward a PM role. Open to conversations with teams who treat content, documentation, and product writing as part of the core product surface, not an afterthought.</p>
+        <span class="about-label">How I Work</span>
+        <p class="about-text">I approach information as a product surface. I start with the audience, the task they are trying to complete, and the points where the experience breaks down. From there, I use research, analytics, information architecture, content strategy, and cross-functional collaboration to design something clearer and more useful.</p>
+        <p class="about-text">At Ledger, I have led initiatives across customer and developer documentation, knowledge architecture, AI support content, search optimization, analytics, security education, and product collaboration. Earlier in my career at Simple Finance, I worked across help content, product writing, content strategy, and persona development grounded in user research.</p>
+        <p class="about-text">That perspective supports the range of work represented here: Technical Writing, Developer Experience, Content Strategy, Information Architecture, and Product Management. The roles may differ, but the underlying work remains consistent: organizing information, solving product problems, and improving experiences.</p>
 
         <span class="about-label">How to Find Me</span>
         <div style="margin-top:4px;">
@@ -296,19 +314,19 @@
           </div>
           <div class="contact-item">
             <span class="contact-label">Location</span>
-            Portland, Oregon
+            Vancouver, Washington
           </div>
           <div class="contact-item">
             <span class="contact-label">Degree</span>
-            B.S. Technical Communication (UX), ASU
+            B.S. Technical Communication, UX focus, ASU
           </div>
           <div class="contact-item">
             <span class="contact-label">Currently</span>
             Technical Writer &amp; Content Strategist, Ledger
           </div>
           <div class="contact-item">
-            <span class="contact-label">Target</span>
-            Product Management · Design-led tech
+            <span class="contact-label">Focus</span>
+            Documentation · Developer Experience · Information Architecture
           </div>
         </div>
       </div>
@@ -316,7 +334,7 @@
   </div>
 </section>
 
-<footer><p>Jared V Rosen &nbsp;·&nbsp; Portland, OR &nbsp;·&nbsp; 2026</p></footer>
+<footer><p>Jared V Rosen &nbsp;·&nbsp; Vancouver, WA &nbsp;·&nbsp; 2026</p></footer>
 <script>
 const reveals = document.querySelectorAll('.reveal');
 const obs = new IntersectionObserver((entries) => {
