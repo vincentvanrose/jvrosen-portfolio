@@ -197,8 +197,11 @@
     vertical-align: middle;
   }
 
-  /* About section */
-  .about-section { padding: 100px 0 60px; }
+  /* Selected work and about sections */
+  .selected-work-section { padding: 24px 0 20px; }
+  .selected-work-section .section { padding-top: 24px; padding-bottom: 48px; }
+  .selected-work-section .section-header { margin-bottom: 28px; }
+  .about-section { padding: 40px 0 60px; }
 
   .profile-portrait {
     width: 100%;
@@ -240,6 +243,36 @@
 
 </section>
 
+<!-- SELECTED WORK -->
+<section id="selected-work" class="selected-work-section">
+  <div class="section">
+    <div class="section-header reveal">
+      <h2 class="section-title">Selected Work</h2>
+      <span class="section-meta">Portfolio</span>
+    </div>
+    <div class="hero-cards">
+    <a class="hero-card" href="work.html">
+      <span class="card-label">Work</span>
+      <span class="card-title">Professional</span>
+      <span class="card-desc">Case studies from Ledger and Simple Finance.</span>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="hero-card" href="study.html">
+      <span class="card-label">Study</span>
+      <span class="card-title">Research</span>
+      <span class="card-desc">UX research and audience analysis from ASU.</span>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="hero-card" href="https://medium.com/@jared.v.rosen" target="_blank" rel="noopener">
+      <span class="card-label">Blog<span class="card-ext">External ↗</span></span>
+      <span class="card-title">Posts &amp; Essays</span>
+      <span class="card-desc">Content strategy, UX, and product thinking on Medium.</span>
+      <span class="card-arrow">↗</span>
+    </a>
+  </div>
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about" class="about-section">
   <div class="section">
@@ -252,16 +285,18 @@
         <img class="profile-portrait" src="images/jared-profile.png" alt="Jared Vincent Rosen">
 
         <h3 class="about-philosophy">Documentation is the product.</h3>
-        <p class="about-text">Whether the audience is customers, developers, internal teams, or AI systems, documentation is the product people use to learn, integrate, troubleshoot, and make decisions.</p>
-        <p class="about-text">I treat it as a living product with users, success metrics, technical debt, and a roadmap. That approach shapes my work across documentation, developer experience, information architecture, internal knowledge systems, search, and AI support content.</p>
+        <p class="about-text">Whether the audience is customers, developers, internal teams, or AI systems, documentation is the product people experience when they are learning, integrating, troubleshooting, or making decisions.</p>
+        <p class="about-text">Throughout my career, I have applied product thinking to documentation by treating it as a living product with users, success metrics, technical debt, feature requests, and a roadmap for continuous improvement. Every decision, from information architecture and search to developer documentation, AI knowledge systems, and customer education, is an opportunity to reduce friction, improve adoption, and help people accomplish their goals.</p>
 
         <span class="about-label">Background</span>
-        <p class="about-text">I am a technical writer, content strategist, and systems thinker with a B.S. in Technical Communication with a user experience focus from Arizona State University.</p>
+        <p class="about-text">I am a technical writer, content strategist, and systems thinker with a B.S. in Technical Communication from Arizona State University, with a focus on user experience.</p>
+        <p class="about-text">For most of my career, I have helped people understand complex technology. Over time, I realized the work I enjoyed most was not simply writing documentation. It was understanding users, organizing information, identifying friction, and improving the experience around a product.</p>
       </div>
       <div>
-        <span class="about-label">Approach</span>
-        <p class="about-text">I start with the audience, the task they need to complete, and where the experience breaks down. Then I use research, analytics, information architecture, content strategy, and collaboration to make it clearer and more useful.</p>
-        <p class="about-text">At Ledger, I have led work across customer and developer documentation, internal knowledge architecture, AI support content, search, analytics, security education, and product collaboration. The work stays consistent: organizing information, solving product problems, and improving experiences.</p>
+        <span class="about-label">How I Work</span>
+        <p class="about-text">I approach information as a product surface. I start with the audience, the task they are trying to complete, and the points where the experience breaks down. From there, I use research, analytics, information architecture, content strategy, and cross-functional collaboration to design something clearer and more useful.</p>
+        <p class="about-text">At Ledger, I have led initiatives across customer and developer documentation, knowledge architecture, AI support content, search optimization, analytics, security education, and product collaboration. Earlier in my career at Simple Finance, I worked across help content, product writing, content strategy, and persona development grounded in user research.</p>
+        <p class="about-text">That perspective supports the range of work represented here: Technical Writing, Developer Experience, Content Strategy, Information Architecture, and Product Management. The roles may differ, but the underlying work remains consistent: organizing information, solving product problems, and improving experiences.</p>
 
         <span class="about-label">How to Find Me</span>
         <div style="margin-top:4px;">
@@ -303,35 +338,6 @@
   </div>
 </section>
 
-<!-- SELECTED WORK -->
-<section id="selected-work" class="about-section">
-  <div class="section">
-    <div class="section-header reveal">
-      <h2 class="section-title">Selected Work</h2>
-      <span class="section-meta">Portfolio</span>
-    </div>
-    <div class="hero-cards">
-    <a class="hero-card" href="work.html">
-      <span class="card-label">Work</span>
-      <span class="card-title">Professional</span>
-      <span class="card-desc">Case studies from Ledger and Simple Finance.</span>
-      <span class="card-arrow">→</span>
-    </a>
-    <a class="hero-card" href="study.html">
-      <span class="card-label">Study</span>
-      <span class="card-title">Research</span>
-      <span class="card-desc">UX research and audience analysis from ASU.</span>
-      <span class="card-arrow">→</span>
-    </a>
-    <a class="hero-card" href="https://medium.com/@jared.v.rosen" target="_blank" rel="noopener">
-      <span class="card-label">Blog<span class="card-ext">External ↗</span></span>
-      <span class="card-title">Posts &amp; Essays</span>
-      <span class="card-desc">Content strategy, UX, and product thinking on Medium.</span>
-      <span class="card-arrow">↗</span>
-    </a>
-  </div>
-  </div>
-</section>
 
 <footer><p>Jared V Rosen &nbsp;·&nbsp; Vancouver, WA &nbsp;·&nbsp; 2026</p></footer>
 <script>
