@@ -21,6 +21,48 @@
   @media (max-width: 760px) {
     .artifact-right .artifact-visual { margin-top:18px; }
   }
+
+  .tooling-strip {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 32px;
+    padding: 24px 0 26px;
+    margin-bottom: 34px;
+    border-top: 1px solid var(--accent-line);
+    border-bottom: 1px solid var(--accent-line);
+  }
+  .tooling-strip-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: 2px;
+  }
+  .tooling-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 34px;
+  }
+  .tooling-group strong {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--near-black);
+  }
+  .tooling-group span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+  @media (max-width: 760px) {
+    .tooling-strip { grid-template-columns: 1fr; gap: 14px; }
+    .tooling-groups { grid-template-columns: 1fr; }
+  }
+
 </style>
 </head>
 <body>
@@ -41,6 +83,29 @@
 </div>
 </div>
 <div class="section">
+
+<div class="tooling-strip reveal">
+  <div class="tooling-strip-label">Selected platforms &amp; tools</div>
+  <div class="tooling-groups">
+    <div class="tooling-group">
+      <strong>Knowledge &amp; delivery</strong>
+      <span>Confluence · Salesforce Knowledge · Knowledge:Bridge · Comala · Sana · Zendesk</span>
+    </div>
+    <div class="tooling-group">
+      <strong>Analytics &amp; operations</strong>
+      <span>Google Analytics / GA4 · Search Console · Datadog · Sentry · Assembled</span>
+    </div>
+    <div class="tooling-group">
+      <strong>Planning &amp; collaboration</strong>
+      <span>Jira · Asana · Monday.com</span>
+    </div>
+    <div class="tooling-group">
+      <strong>Design &amp; technical</strong>
+      <span>Figma · Miro · Lucid · GitHub · VS Code</span>
+    </div>
+  </div>
+</div>
+
 <div class="artifact reveal">
 <div class="artifact-accent"></div>
 <div class="artifact-left">
@@ -136,9 +201,9 @@
 <span class="artifact-source">Ledger</span>
 <h3 class="artifact-title">Learning &amp; Development</h3>
 </div>
-<span class="artifact-tags">Learning Design · E-Learning · Product Training · Knowledge Application</span>
-<p class="artifact-body">Designed structured learning experiences that turned complex product and operational knowledge into training people could actually use. Built payments-focused e-learning, product training for beta launches, and sales enablement for retail partners.</p>
-<p class="artifact-body">Focused training on decisions and real scenarios rather than information recall, connecting learning materials back to the same governed knowledge sources used across the organization.</p>
+<span class="artifact-tags">Sana · Learning Design · Information Architecture · Content Strategy · E-Learning</span>
+<p class="artifact-body">Use Sana as both an information architecture and content strategy platform to structure and deliver enterprise product knowledge for retail partners, including Best Buy and Boulanger in France. The work includes organizing learning paths, shaping how information is grouped and surfaced, and keeping training aligned with governed source knowledge.</p>
+<p class="artifact-body">Also built payments-focused e-learning, beta-product training, and retail sales enablement, with an emphasis on decisions and real scenarios rather than information recall.</p>
 </div>
 <div class="artifact-right">
 <p class="artifact-body">Also helped shape an AI customer simulator for practice scenarios, using curated questions to let specialists rehearse interactions while surfacing gaps in the underlying knowledge base.</p>
